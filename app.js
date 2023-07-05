@@ -1,0 +1,1 @@
+document.querySelector(".menupics").style.display = "none";

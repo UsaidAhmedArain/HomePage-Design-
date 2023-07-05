@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;700&family=Montserrat&family=Roboto+Mono:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 98vw;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.logo {
+    margin: 0px 20px;
+}
+
+.logo img {
+    margin-top: 10px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 0px 17px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-family: 'Epilogue', sans-serif;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+#btns {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-right: 14px;
+}
+
+#btns li {
+    list-style: none;
+    padding: 0px 40px;
+}
+
+#btns li a {
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#btns li a:hover {
+    color: black;
+}
+
+#btns button {
+    padding: 9px 19px;
+    border: 2px solid hsl(0, 0%, 98%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+}
+
+#btns button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.left {
+    height: 595px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 8px; */
+}
+
+.heading {
+    color: hsl(0, 0%, 8%);
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.para p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 400;
+}
+
+.cbtn button {
+    display: block;
+    padding: 13px 20px;
+    border-radius: 9px;
+    color: hsl(0, 0%, 98%);
+    background-color: black;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    gap: 20px;
+}
+
+.cbtn button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+    margin: -1px;
+}
+
+.logo-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:480px){
+    .menu ul {
+        display: none;
+    }
+    #btns {
+        display: none;
+    }
+    .logo {
+        margin: 0px px;
+    }
+}
